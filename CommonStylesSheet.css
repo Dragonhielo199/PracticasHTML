@@ -3,26 +3,27 @@ p {
 	font-size: 20px;
 }
 
-/*Img position*/
+/* Divs contenedores */
 
-.imagenAbajoDerecha {
-	float: right;
-	margin-left: 20px;
-	margin-bottom: 10px;
-	margin-right: 20px;
+.contenedor {
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.imagenAbajoIzquierda {
-	float: left;
-	margin-left: 20px;
-	margin-bottom: 10px;
-	margin-right: 20px;
+.imagen {
+    max-width: 310px;
+    height: auto;
 }
 
-.imagenAbajoCentro {
-	left: 50;
-	margin: 0;
+.texto {
+    color: white;
+    max-width: 70%;
+	justify-content: center;
 }
+
 
 img {
 	max-width: 100%;
