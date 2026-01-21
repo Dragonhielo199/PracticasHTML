@@ -5,7 +5,7 @@
 		<style>
 		
 			body {
-				background-image: url('C:/Users/hydra/Downloads/fondo-madera-tablero-ajedrez.jpg');
+				background-image: url('Resources/fondo-madera-tablero-ajedrez.jpg');
 				background-repeat: no-repeat;
 				background-position: center;
 				background-size: cover;
@@ -18,7 +18,7 @@
 					0 -10px 15px -5px rgba(0,0,0,1),
 					0 10px 15px -5px rgba(0,0,0,1); 
 				margin: 0 auto;
-				background-image: url('C:/Users/hydra/Downloads/tablero-ajedrez.avif');
+				background-image: url('Resources/tablero-ajedrez.avif');
 			}
 		
 			td {
@@ -28,14 +28,32 @@
 				border: 1px solid black;
 			}
 			
-			h1 {
-				text-align: center;
+			td {
+				font-size: 40px;
+				vertical-align: middle;
 			}
 			
+			tr:nth-child(even) td:nth-child(even) {
+				background-color: #f0d9b5; 
+			}
+
+			tr:nth-child(even) td:nth-child(odd) {
+				background-color: #b58863; 
+			}
+
+			tr:nth-child(odd) td:nth-child(even) {
+				background-color: #b58863; 
+			}
+
+			tr:nth-child(odd) td:nth-child(odd) {
+				background-color: #f0d9b5; 
+			}
+
 			
-			img {
-				width: 75ppx;
-				height: 75px;
+			h1 {
+				text-align: center;
+				background-color: rgba(0,0,0,0.5)
+				color: white;
 			}
 			
 		</style>
@@ -62,107 +80,91 @@
 			</tr>
 			<tr>
 				<td> A
-				<div>
-					<td> <i class="fa-solid fa-chess-rook"></i>
-					<td> <i class="fa-solid fa-chess-knight"></i>
-					<td> <i class="fa-solid fa-chess-bishop"></i>
-					<td> <i class="fa-solid fa-chess-king"></i>
-					<td> <i class="fa-solid fa-chess-queen"></i>
-					<td> <i class="fa-solid fa-chess-bishop"></i>
-					<td> <i class="fa-solid fa-chess-knight"></i>
-					<td> <i class="fa-solid fa-chess-rook"></i> 
-				</div>
+				<td> <i class="fa-solid fa-chess-rook"></i>
+				<td> <i class="fa-solid fa-chess-knight"></i>
+				<td> <i class="fa-solid fa-chess-bishop"></i>
+				<td> <i class="fa-solid fa-chess-king"></i>
+				<td> <i class="fa-solid fa-chess-queen"></i>
+				<td> <i class="fa-solid fa-chess-bishop"></i>
+				<td> <i class="fa-solid fa-chess-knight"></i>
+				<td> <i class="fa-solid fa-chess-rook"></i> 
 			</tr>
 			<tr>
 				<td> B
-				<div>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-					<td> <i class="fa-solid fa-chess-pawn"></i>
-				</div>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
+				<td> <i class="fa-solid fa-chess-pawn"></i>
 			</tr>
 			<tr>
 				<td> C
-				<div>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</div>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
 			</tr>
 			<tr>
 				<td> D
-				<div>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</div>			
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>			
 			</tr>
 			<tr>
 				<td> E
-				<div>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</div>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>
 			</tr>
 			<tr>
 				<td> F
-				<div>
-					<td> 
-					<td> 
-					<td> 
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</div>				
+				<td> 
+				<td> 
+				<td> 
+				<td>
+				<td>
+				<td>
+				<td>
+				<td>				
 			</tr>
 			<tr>
 				<td> G
-				<div>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-					<td> <i class="fa-regular fa-chess-pawn"></i>
-				</div>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
+				<td> <i class="fa-regular fa-chess-pawn"></i>
 			</tr>
 			<tr>
 				<td> H
-				<div>
-					<td> <i class="fa-regular fa-chess-rook"></i>
-					<td> <i class="fa-regular fa-chess-knight"></i>
-					<td> <i class="fa-regular fa-chess-bishop"></i> 
-					<td> <i class="fa-regular fa-chess-king"></i>
-					<td> <i class="fa-regular fa-chess-queen"></i>
-					<td> <i class="fa-regular fa-chess-bishop"></i>
-					<td> <i class="fa-regular fa-chess-knight"></i>
-					<td> <i class="fa-regular fa-chess-rook"></i>
-				</div>
+				<td> <i class="fa-regular fa-chess-rook"></i>
+				<td> <i class="fa-regular fa-chess-knight"></i>
+				<td> <i class="fa-regular fa-chess-bishop"></i> 
+				<td> <i class="fa-regular fa-chess-king"></i>
+				<td> <i class="fa-regular fa-chess-queen"></i>
+				<td> <i class="fa-regular fa-chess-bishop"></i>
+				<td> <i class="fa-regular fa-chess-knight"></i>
+				<td> <i class="fa-regular fa-chess-rook"></i>
 			</tr>
 		</table>
 
