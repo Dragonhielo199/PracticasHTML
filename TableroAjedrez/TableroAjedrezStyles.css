@@ -18,37 +18,19 @@ table {
 td {
 	width: 75px;
 	height: 75px;
+	color: black;
 	text-align: center;
 	border: 1px solid black;
-}	
-			
-td {
 	font-size: 40px;
 	vertical-align: middle;
+}	
+			
+tr:nth-child(even) td:nth-child(even), tr:nth-child(odd) td:nth-child(odd) {
+	background-color: #b58863; 
 }
 
-tr:first-child td {
-	background-color: #5c4033; 
-	color: white;
-	font-weight: bold;
-	text-align: center;
-}
-
-td:first-child {
-	background-color: #5c4033;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-}
-
-tr:nth-child(even) td:nth-child(even),
-tr:nth-child(odd) td:nth-child(odd) {
-	background-color: #b58863; /* negro */
-}
-
-tr:nth-child(even) td:nth-child(odd),
-tr:nth-child(odd) td:nth-child(even) {
-	background-color: #f0d9b5; /* blanco */
+tr:nth-child(even) td:nth-child(odd), tr:nth-child(odd) td:nth-child(even) {
+	background-color: #f0d9b5;
 }
 
 
