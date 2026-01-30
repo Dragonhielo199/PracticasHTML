@@ -1,0 +1,32 @@
+body {
+    background-color: #D6C1C1;
+}
+
+#tablaDatos {
+    border: 3px solid black;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#tablaDatos tbody tr:nth-child(even) {
+    background-color: #969696;
+}
+
+#tablaDatos tbody tr:nth-child(odd) {
+    background-color: #4D4D4D;
+}
+
+#tablaDatos th {
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+#tablaDatos th, #tablaDatos td {
+    border: 1px solid black;
+    padding: 6px;
+}
+
+h1 {
+    text-align: center;
+}

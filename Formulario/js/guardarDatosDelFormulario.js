@@ -1,6 +1,6 @@
-let datosFormulario = [];
-
 const formulario = document.getElementById("formulario");
+
+let datosFormulario = JSON.parse(localStorage.getItem("datosFormulario")) || [];
 
 formulario.addEventListener("submit", function(event) {
     event.preventDefault(); // Evita que la página se recargue
@@ -16,7 +16,9 @@ formulario.addEventListener("submit", function(event) {
 
     datosFormulario.push(datos);
 
-    console.log(datosFormulario);
+    localStorage.setItem("datosFormulario", JSON.stringify(datosFormulario));
 
     formulario.reset();
+	
+	window.location.href = "Tabla/Tabla.html";
 });

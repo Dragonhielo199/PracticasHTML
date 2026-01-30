@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title> Tabla con datos </title>
+		
+		<link rel="stylesheet" href="TablaStyle.css">
+	</head>
+	
+	<body>
+	<table border="1" id="tablaDatos">
+		<thead>
+			<tr>
+				<th>Nombre</th>
+				<th>Apellidos</th>
+				<th>Sexo</th>
+				<th>Fecha de nacimiento</th>
+				<th>Email</th>
+				<th>Teléfono</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+		</tbody>
+	</table>
+	
+	<button id="volverBtn">Volver al formulario</button>
+	<script>
+		document.getElementById("volverBtn").addEventListener("click", () => {
+			window.location.href = "../Formulario.html";
+		});
+	</script>
+	
+	<script src="js/TableData.js"></script>
+
+	</body>
+</html>
