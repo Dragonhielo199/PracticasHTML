@@ -7,11 +7,11 @@
 	
 	<body>
 	
-		<h1> Formulario de empleo <h1>
+		<h1> Formulario de empleo </h1>
 		
 		<hr>
 	
-		<form action="mailto:288!!678direcciondecorreoinventadaPPMM23433@gmail.com">
+		<form id="formulario">
 			
 			<fieldset>
 			
@@ -36,7 +36,7 @@
 				<input type="email" id="email" name="email" placeholder="tudirecciondecorreo@gmail.com"> <br> <br>
 				
 				<label for="telefono"> Teléfono de contacto: </label>
-				<input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" placeholder="111 22 33 44"> <br> <br>
+				<input type="tel" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="111 22 33 44"> <br> <br>
 				
 				<label for="direccion"> Dirección: </label>
 				<input type="text" id="direccion" name="direccion" placeholder="c/ TuCalle nºportal/casa nºpiso puerta"> <br> <br>
@@ -85,7 +85,7 @@
 				</select> <br> <br>
 				
 				<label for="otrosTitulos"> Otros títulos obtenidos </label>
-				<input type="text" id=" otrosTitulos" name="otrosTitulos" placeholder="Doctorado en..., master en..., curso de..."> <br> <br>
+				<input type="text" id="otrosTitulos" name="otrosTitulos" placeholder="Doctorado en..., master en..., curso de..."> <br> <br>
 				
 				<label for="lugarEstudios"> Lugar de los estudios: </label>
 				<input type="text" id="lugarEstudios" name="lugarEstudios" placeholder="Universidad X..., IES Y..."> <br> <br>
@@ -115,6 +115,8 @@
 		</form>
 		
 		<hr>
+		
+		<script src="guardarDatosDelFormulario.js"></script>
 
 	</body>
 </html>
