@@ -1,0 +1,192 @@
+<html>
+	<head>
+		<title> Página de inicio </title>
+		
+		<link rel="stylesheet" href="CommonStylesSheet.css">
+		
+		<style>
+		
+			body {
+				background-color: #121212;
+			}
+			
+			p {
+				color: #f0f0f0;
+			}
+			
+			hr {
+				height: 50px;
+				width: 100%;
+				color: rgba(0,0,0,0);
+				border: hidden;
+			}
+
+			a:link {
+				color: #00BDB7;
+			}
+			
+			#enlacePaginas {
+				background-color: #007A3E;
+			}
+
+			#indice {
+				color: #f0f0f0;
+			}
+			
+			div {
+				background-color: #262626;
+			}
+			
+			header {
+				text-align: center;
+				color: #f0f0f0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				padding: 15px 0;
+				z-index: 1000;
+				font-size: 30px;
+				background-color: #121212;
+			}
+			
+			footer {
+				text-align: center;
+				color: #f0f0f0;
+				position: fixed;
+				bottom: 0;
+				width: 100%;
+				padding: 15px 0;
+				z-index: 1000;
+				font-size: 20px;
+				background-color: #121212;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+		<header> Prácticas página HTML </header>
+		
+		<hr>
+		
+		<h1 id="indice"> Indice
+			<ol>
+				<li> Página Inicio Sesión </li>
+				<li> Página con tablero de ajedrez </li>
+				<li> Página con formulario </li> 
+			</ol>
+		</h1>
+		
+		<hr>
+		
+		<div class="contenedor">
+
+			<div class="texto">
+
+				<h1>Página Inicio sesión</h1>
+				<p> En esta página podremos ver un ejemplo de un inicio de sesión. Esta página está hecha en base a un formulario que no tiene ninguna acción programada </p>
+				<a href="PaginaInicioSesion/PaginaInicioSesion.html" target="_blank"> Click aquí para ir </a>
+
+			</div>
+			
+			
+			<img src="https://miro.medium.com/1*Pjml9-K_nkQxa0YrGZusNw.gif" class="imagen">
+			
+
+		</div>
+
+		
+		<hr>
+		
+		<div class="contenedor">
+			
+			<div class="texto">
+
+				<h1> Tablero de Ajedrez </h1>
+				<p> En esta página podremos ver un tablero de ajedrez con sus piezas construido en base a una tabla que contiene los iconos de las fichas y el nombre de las filas y las columnas </p>
+				<a href="TableroAjedrez/TableroAjedrez.html" target="_blank"> Click aquí para ir </a>
+
+			</div>
+			
+			
+			<img src="https://images.chesscomfiles.com/uploads/v1/images_users/tiny_mce/SamCopeland/php2xbi2O.gif" class="imagen">
+			
+
+		</div>
+		
+		<hr>
+		
+		<div class="contenedor">
+			
+			<div class="texto">
+
+				<h1> Página con formulario </h1>	
+				<p> En esta página se podrá ver un ejemplo de formulario sencillo </p>
+				<a href="Formulario/Formulario.html" target="_blank"> Click aquí para ir </a>
+
+			</div>
+			
+			
+			<img src="https://cdn-icons-gif.flaticon.com/17626/17626898.gif" class="imagen">
+			
+
+		</div>
+
+		<hr>
+		
+		<footer> <em> <i> Bernardo Agustín Torres Castillo </i> </em> </footer>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+
+			const imgs = document.querySelectorAll('.imagen')
+			let imgActiva = null
+
+			imgs.forEach(img => {
+				img.addEventListener('click', (e) => {
+				e.stopPropagation()
+
+					if (imgActiva && imgActiva !== img) {
+						reset(imgActiva)
+					}
+
+					if (imgActiva === img) {
+						reset(img)
+						imgActiva = null
+					} else {
+						ampliar(img)
+						imgActiva = img
+					}
+				})
+			})
+
+			document.addEventListener('click', () => {
+				if (imgActiva) {
+					reset(imgActiva)
+					imgActiva = null
+				}
+			})
+
+				function ampliar(img) {
+					img.style.position = 'fixed'
+					img.style.top = '50%'
+					img.style.left = '50%'
+					img.style.transform = 'translate(-50%, -50%) scale(1.5)'
+					img.style.transition = '0.3s'
+					img.style.zIndex = '2000'
+				}
+
+				function reset(img) {
+					img.style.position = ''
+					img.style.top = ''
+					img.style.left = ''
+					img.style.transform = ''
+					img.style.zIndex = ''
+				}
+
+			})
+		</script>
+		
+	</body>
+</html>
